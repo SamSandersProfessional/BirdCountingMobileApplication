@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BirdCountLocation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <button id="burger" onclick="toggleMenu()" role="reveal menu">
+      <img
+        src="includes/images/BurgerMenuIcon.png"
+        alt="3 individual lines aligned vertically"
+      />
+    </button>
+    <a id="homeshortcut" role="home" href="index.html">
+      <img id="homeimg" src="includes/images/Logo.png" alt="RSPB Logo" />
+    </a>
+    <div id="MainNav">
+      <div id="topnav" role="navigation">
+        <nav>
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="BirdResults.html">Results</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+            <li><a href="RecentForm.html">Recent Forms</a></li>
+            <li><a href="BirdCountRegistrationSplash.html">My Account</a></li>
+            <li><a href="BirdCountHelp.html">Help and FAQs</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <button id="settingsCog" onclick="toggleSettings()" role="open settings">
+        <img src="includes/images/SettingCogImage.png" alt="mechanical cog" />
+      </button>
+    </div>
+
+    <div id="MainSettings">
+      <div id="settings" role="Settings">
+        <ul>
+          <li>
+            Dyslexic view<br />
+            <label class="switch">
+              <input type="checkbox" id="dyslexicView" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li>
+            High contrast view<br />
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li>
+            Text to Speech<br />
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li>
+            Language<br />
+            <select
+              name="Language"
+              style="
+                font-size: 20px;
+                margin-top: 20px;
+                height: 40px;
+                width: 70%;
+              "
+            >
+              <option value="Eng">Eng</option>
+              <option value="Fre">Fre</option>
+              <option value="Jam">Jam</option>
+              <option value="Spa">Spa</option>
+            </select>
+          </li>
+
+          <li>
+            <span id="change5">Text size</span><br />
+            <div
+              style="
+                align-items: center;
+                display: grid;
+                justify-content: center;
+              "
+            >
+              <span class="checkboxContainer">
+                <input type="checkbox" id="textSizeB" />Large
+              </span>
+              <span class="checkboxContainer">
+                <input type="checkbox" id="textSizeN" checked="true" />
+                Medium</span
+              >
+              <span class="checkboxContainer">
+                <input type="checkbox" id="textSizeS" /> Small</span
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button
+        id="settingsCogSecond"
+        onclick="toggleSettings()"
+        role="open settings"
+      >
+        <img src="includes/images/SettingCogImage.png" alt="mechanical cog" />
+      </button>
+    </div>
+
+    <div id="Main">
+      Bird Count <br />
+
+      <div id="PageTitle">Location</div>
+
+      Search for your location!
+      <div id="searchDropdown" style="height: 40%">
+        <div id="dropdownInside">
+          <input type="text" placeholder="Search.." />
+          <ul>
+            <li class="locationli">
+              <div class="locationdiv">
+                <button>Adur Estuary</button>
+              </div>
+            </li>
+            <li class="locationli">
+              <div class="locationdiv">
+                <button>Norfolk Broads</button>
+              </div>
+            </li>
+            <li class="locationli">
+              <div class="locationdiv">
+                <button>Arne</button>
+              </div>
+            </li>
+            <li class="locationli">
+              <div class="locationdiv">
+                <button>Baron's Haugh</button>
+              </div>
+            </li>
+            <li class="locationli">
+              <div class="locationdiv">
+                <button>Capel Fleet</button>
+              </div>
+            </li>
+            <li class="locationli">
+              <div class="locationdiv">
+                <button>Bempton Cliffs</button>
+              </div>
+            </li>
+            <li class="locationli">
+              <div class="locationdiv">
+                <button>Campfield Marsh</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottomArrows">
+      <a href="BirdCountTally.html"
+        ><img
+          src="includes/images/ArrowLeft.png"
+          alt="arrow left"
+          role="Go to previous step"
+      /></a>
+      <a href="BirdCountDate.html"
+        ><img
+          src="includes/images/ArrowRight.png"
+          alt="arrow right"
+          role="Go to next step"
+      /></a>
+    </div>
+  </body>
+</html>

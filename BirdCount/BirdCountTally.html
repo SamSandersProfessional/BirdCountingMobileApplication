@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html id="html" style="font-size: 100%">
+
+<head>
+  <title>BirdCountTally</title>
+<link rel="stylesheet" href="style.css">
+<script script src="scripts.js"></script>
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <button id="burger" onclick="toggleMenu()" role ="reveal menu">
+    <img src ="includes/images/BurgerMenuIcon.png" alt ="3 individual lines aligned vertically">
+  </button>
+  <a id="homeshortcut" role="home" href="index.html">
+    <img id="homeimg" src="includes/images/Logo.png" alt="RSPB Logo" />
+  </a>
+  <div id ="MainNav">
+    <div id="topnav" role ="navigation"> 
+        <nav>
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="BirdResults.html">Results</a></li>
+              <li><a href="Admin.html">Admin</a></li>
+              <li><a href="RecentForm.html">Recent Forms</a></li>
+              <li><a href="BirdCountRegistrationSplash.html">My Account</a></li>
+              <li><a href="BirdCountHelp.html">Help and FAQs</a></li>
+        </nav>
+        
+    </div>
+    
+    <button id="settingsCog" onclick="toggleSettings()" role="open settings">
+    <img src ="includes/images/SettingCogImage.png" alt="mechanical cog">
+    </button>
+    </div>
+    
+    <div id ="MainSettings" >
+      <div id="settings" role ="Settings">
+          <ul>
+            <li><span id="change1">Dyslexic view</span><br />
+              <label class="switch">
+                <input type="checkbox" id="dyslexicCheck">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li><span id="change2">High contrast view</span><br />
+              <label class="switch">
+                <input type="checkbox" id ="highContrastCheck">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li><span id="change3">Text to Speech</span><br />
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li><span id="change4">Language</span><br />
+              <select name="Language" style="font-size: 20px;margin-top: 20px;height:40px;width:70%;" id="languageSelect">
+                <option value="Eng">Eng</option>
+                <option value="Fre">Fre</option>
+                <option value="Jam">Jam</option>
+                <option value="Spa">Spa</option>
+              </select>
+            </li>
+            
+            <li><span id="change5">Text size</span><br />
+              <div style="align-items: center;
+              display: grid;
+              justify-content: center;">
+              <span class="checkboxContainer">
+              <input type="checkbox" id="textSizeB" >Large  </span>
+              <span class="checkboxContainer">
+              <input type="checkbox" id="textSizeN"> Medium</span> 
+              <span class="checkboxContainer">
+                <input type="checkbox" id="textSizeS" checked=true> Small</span>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <button id="settingsCogSecond" onclick="toggleSettings()" role="open settings">
+          <img src ="includes/images/SettingCogImage.png" alt="mechanical cog">
+        </button>
+    </div>
+
+
+<!-- <div id="imagexpand">
+  <img src="includes/images/birds/toucan.png"/>
+</div> -->
+
+<div id="Main">
+<div id ="replace" style="
+width: 50%;">
+  Bird Count <br/>
+</div>
+  <div id="PageTitle">
+    Bird Tally
+  </div>
+
+  <div id="BirdTallies">
+    <div class="BirdRow">
+      <ul>
+      <div class="bird-name" >
+        <li><img src="includes/images/X.png" onclick="removeRow(this)"> <img src="includes/images/birds/toucan.png" ></img>Toucan</li>
+      </div>
+      <div class="arrows">
+        <li><img src="includes/images/Minus.png" style="right:auto;" role="Remove bird count by one" onclick="updateCount(this, -1)"></li>
+        <li>3</li>
+        <li><img src="includes/images/Plus.png" role="Add bird count by one" onclick="updateCount(this, 1)"></li>
+      </div>  
+    </ul>
+    </div>
+  </div>
+
+<button id ="addBird" onclick="toggleBirdPopUp()" style="width:200px;height:100px" role="Open pop up to add a bird">Add a bird</button>
+
+</div>
+
+
+
+<div id="AddBirdsPopUp">
+  <button id="PopUpClose">
+  <img src="includes/images/Close_Red.png" onclick="toggleBirdPopUp()" role="close popup">
+  </button>
+  <br />
+ 
+  Search for your bird!
+  <div id="searchDropdown">
+    <div id="dropdownInside">
+      <input id="searchbox" type="search" placeholder="Search.." oninput="search()">
+      <ul>
+        <li class="searchbirditem animate">
+          <div class="searchitem">
+            <img src="includes/images/birds/golden_plover.jpeg"/>
+            <button class="birdname1">Golden Plover</button>
+            <img class="expandbutton" src="includes/images/expand.png"/>
+          </div>
+        </li>
+        <li class="searchbirditem">
+          <div class="searchitem">
+            <img src="includes/images/placeholder-image-square.jpg"/>
+            <button onclick="addBird('Pigeon')">Pigeon</button>
+          </div>
+        </li>
+    </ul>
+    </div>
+  </div>
+
+</div>
+
+<div id="addbirdtallyblackout"></div>
+
+<div id="bottomArrows">
+  <a href="index.html"><img src ="includes/images/ArrowLeft.png" id = "arrowLeft" alt="arrow left" role="Go to previous step"></a>
+  <a href="BirdCountLocation.html"><img src ="includes/images/ArrowRight.png" id = "arrowRight" alt="arrow right" role="Go to next step"></a>
+</div>
+  </body>
+  </html>

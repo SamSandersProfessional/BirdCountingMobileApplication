@@ -1,0 +1,999 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');");
+
+Html,
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+@keyframes slide-left {
+  0% {
+    max-width: 0px;
+  }
+  100% {
+    max-width: 50%;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    max-width: 100%;
+  }
+  100% {
+    max-width: 0px;
+  }
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+#Main {
+  font-size: 1.563rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 4px;
+  height: 100%;
+  background-color: white;
+  align-items: center;
+}
+
+#topnav,
+#settings {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  font-size: 1.25rem;
+  border: none;
+  padding: 5px 10px;
+  align-self: center;
+
+  margin-top: 60px;
+  height: 80%;
+}
+
+#searchDropdown input {
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 14px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 90%;
+}
+
+#searchDropdown input:focus {
+  outline: 3px auto rgba(0, 0, 0, 0.5);
+}
+
+#searchDropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  margin-top: 20px;
+  height: 70%;
+}
+
+#dropdownInside {
+  display: block;
+  /*background-color: rgba(255, 255, 255, 0.3);*/
+  width: 90%;
+  z-index: 1;
+}
+
+#dropdownInside ul {
+  padding-inline-start: 0px;
+}
+#dropdownInside li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdownInside button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#topnav li {
+  display: inline-block;
+  margin: 30px 0px 5px 0px;
+}
+
+#settings li {
+  margin-bottom: 22px;
+  text-align: center;
+  justify-content: center;
+}
+
+#settings ul {
+  padding-inline-start: 0px;
+  list-style-type: none;
+  text-align: center;
+  width: 80%;
+  align-self: center;
+}
+#settings input {
+  width: 30px;
+  height: 30px;
+}
+#topnav ul {
+  padding-inline-start: 0px;
+  display: inline-grid;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  align-self: center;
+}
+
+#topnav li a {
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  /* Do we want a bg?
+             background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 15px;
+            border-radius: 10px;*/
+}
+
+#topnav a:hover {
+  font-style: italic;
+  /*transition: all 0.3s ease 0s;*/
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* .active > a {
+  color: #fc6808 !important;
+} */
+
+#MainNav {
+  width: 50%;
+  align-items: left;
+  margin: 0px 0px;
+  border-radius: 0px 0px 10px 0px;
+  background-color: #089cfc;
+  position: fixed;
+  display: none;
+  height: 500px;
+  left: 0;
+  z-index: 2;
+  top: 0;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+#Logo {
+  display: block;
+  margin: 10px;
+  align-self: center;
+  width: 250px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+#settings {
+  justify-content: normal;
+  position: relative;
+  height: 400px;
+  overflow-y: auto;
+}
+
+#settingsCog img,
+#settingsCogSecond img {
+  cursor: pointer;
+  width: 37px;
+}
+#settingsCog,
+#settingsCogSecond {
+  height: auto;
+  right: 5px;
+  top: 8px;
+  background-color: rgba(256, 256, 256, 0);
+  align-self: center;
+  position: absolute;
+  justify-content: center;
+  margin: 0;
+}
+
+#settingsCogSecond {
+  cursor: pointer;
+  width: 37px;
+  height: auto;
+  position: absolute;
+  top: 8px;
+  right: 25px;
+  background-color: rgba(256, 256, 256, 0);
+  z-index: 3;
+}
+
+#burger img {
+  width: 30px;
+}
+
+#burger {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  margin: 10px;
+  top: 0px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 1.875rem;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.searchitem {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-self: center;
+  height: 20px;
+  border-color: #089cfc !important;
+  border-width: 20px !important;
+}
+
+.searchbirditem {
+  /* background-color: green; */
+  border-color: #adadad;
+  border-radius: 60px;
+  border-style: solid;
+  margin: auto;
+  width: 60%;
+  border-width: 2px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+  background-color: #bfbfbf;
+}
+
+.searchbirditem:hover {
+  /* border-width: 30px; */
+  background-color: #089cfc;
+}
+
+.searchbirditem div img {
+  object-fit: contain;
+}
+
+.searchitem button {
+  text-align: center;
+  color: black;
+  height: 30px;
+  width: 82%;
+
+  padding-left: 5px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+#addbirdtallyblackout {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 4;
+  display: none;
+  /* flex: auto; */
+}
+
+.locationitem {
+  /* width: 80%; */
+  margin-bottom: 15px;
+}
+
+.locationli {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-self: center;
+  height: 40px;
+  border-color: #089cfc !important;
+  border-width: 20px !important;
+}
+
+.locationdiv {
+  border-color: #adadad;
+  border-radius: 60px;
+  border-style: solid;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  border-width: 2px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+  background-color: #bfbfbf;
+}
+
+.locationdiv button {
+  height: 100%;
+}
+
+.locationdiv:hover {
+  background-color: #089cfc;
+}
+
+/* .searchitem button {
+  text-align: center;
+  color: black;
+  height: 100%;
+  width: 100%;
+
+  padding-left: 5px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+} */
+
+.hidden {
+  display: none !important;
+}
+
+input,
+textarea,
+button {
+  font: inherit; /* override browser defaults */
+}
+
+#homeshortcut {
+  /* display: block; */
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  padding-top: 8px;
+  float: right;
+  z-index: 4;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+#homeimg {
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  /* position: relative; */
+  /* left: 5px; */
+  /* right: auto; */
+  /* margin-left: auto; */
+  /* padding: auto; */
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  /* border-width: 15px; */
+  border-width: 0px;
+  border-style: outset;
+  transition: 0.3s;
+  transform-origin: center center;
+}
+
+#homeshortcut > img:hover {
+  background-color: red;
+  border-width: 5px;
+  transform: scale(0.9);
+}
+
+#home {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  margin: 10px;
+  top: 0px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 1.875rem;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+button {
+  font-size: 1.25rem;
+  background-color: #558afb;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#bottomArrows img:hover {
+  outline: rgb(0, 0, 0) 5px solid;
+}
+
+#bottomArrows {
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+}
+
+#bottomArrows img {
+  width: 100px;
+  margin: 20px;
+  border-radius: 15px;
+  outline: black 2px solid;
+}
+
+#PageTitle {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+#BirdTallies {
+  width: 90%;
+  height: 30%;
+  align-self: center;
+  right: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 15px;
+  overflow-y: auto;
+}
+
+.BirdRow img {
+  width: 23px;
+}
+.BirdRow {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: fit-content;
+  flex-wrap: wrap;
+  padding: 0px 6px;
+}
+
+.BirdRow ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding-inline-start: 0;
+  margin-block-start: 15px;
+  margin-block-end: 15px;
+  align-items: center;
+}
+.bird-name li {
+  width: auto;
+  text-align: left;
+}
+.bird-name li img {
+  margin-right: 10px;
+}
+.bird-name {
+  width: 50%;
+}
+
+.BirdRow li {
+  margin: 0 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.arrows li {
+  display: inline-block;
+}
+
+.arrows {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.arrows li img {
+  transition: 0.2s;
+}
+
+.arrows li img:hover {
+  filter: invert(28%) sepia(99%) saturate(1670%) hue-rotate(212deg)
+    brightness(95%) contrast(105%);
+}
+
+hr.solid {
+  border-top: 3px solid rgba(0, 0, 0, 0.2);
+  width: 60%;
+  border-radius: 3px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
+#addBird {
+  position: fixed;
+  bottom: 20%;
+  width: 30%;
+  height: 10%;
+  align-self: center;
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  color: #fff;
+}
+
+#addBird:hover {
+  background-color: #2064f8;
+}
+
+#AddBirdsPopUp {
+  height: 300px;
+  background-color: #fff;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  padding-top: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  display: none;
+  font-size: 1.25rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+#AddBirdsPopUp input {
+  margin: 10px 0px;
+  height: 40px;
+  background-color: #fff;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  transition: 0.2s;
+}
+
+#AddBirdsPopUp input:focus {
+  border-color: #089cfc;
+}
+
+/* #AddBirdsPopUp input:hover {
+  
+  border-color: #b16f4e;
+} */
+.bird-name li img {
+  transition: 0.2s;
+}
+/* Only does effects on 1st img */
+.bird-name li img:nth-child(1):hover {
+  filter: invert(14%) sepia(73%) saturate(7293%) hue-rotate(342deg)
+    brightness(103%) contrast(101%);
+}
+
+#PopUpClose,
+#PopUpClose img {
+  position: fixed;
+  width: 30px;
+  bottom: 278px;
+  right: 25px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#birdCountLoc {
+  width: 90%;
+  align-self: center;
+  padding: 40px 0px;
+  font-size: 1.875rem;
+  margin-top: 20px;
+  margin-bottom: 10%;
+}
+
+.checkboxContainer {
+  display: flex;
+  justify-content: left;
+  align-self: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.checkboxContainer input {
+  margin-right: 20px;
+}
+
+#MainSettings {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  height: 100%;
+  background-color: #089cfc;
+  /*overflow-y: auto;*/
+  outline-style: solid;
+  outline-width: 2px;
+  /*Using CSS box shadow generator*/
+  top: 0px;
+  width: 50%;
+  z-index: 2;
+  align-items: center;
+  margin: 0px 0px;
+  border-radius: 0px 0px 10px 0px;
+  box-shadow: none;
+  position: fixed;
+  display: none;
+  height: 500px;
+  left: 0px;
+  animation-duration: 0.6s;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 105px;
+  height: 27px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 50px !important;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #4d4d4d;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #6a6a6a;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px) !important;
+  -ms-transform: translateX(40px) !important;
+  transform: translateX(40px) !important;
+}
+.slider.round {
+  border-radius: 5px;
+}
+
+.slider.round:before {
+  border-radius: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 0px;
+}
+
+.switch .toggle-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.625rem;
+  user-select: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 40px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  content: "OFF";
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: 32px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(52px);
+  -ms-transform: translateX(52px);
+  transform: translateX(52px);
+  content: attr(data-on);
+  content: "ON";
+}
+
+#Main input {
+  width: 80%;
+  height: 50px;
+  align-self: center;
+  font-size: 1.25rem;
+}
+
+#ReviewBottom {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  height: 20%;
+}
+
+.resultimg {
+  width: 45%;
+  height: auto;
+
+  display: block;
+  align-self: center;
+  /* width: 250px; */
+  margin-top: 100px;
+}
+
+@media (max-width: 400px) {
+  #BirdTallies {
+    width: 100%;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+  /*Why is there a gap on either side?*/
+}
+
+input:required:invalid,
+input:focus:invalid {
+  border-color: red;
+}
+input:required:valid {
+  border-color: green;
+}
+/*Why is there a gap on either side?*/
+
+.flex-row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+.smalltext {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400 !important;
+}
+
+.FormList {
+  width: 90%;
+  height: 65%;
+  align-self: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 15px;
+  overflow-y: auto;
+}
+
+.FormList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.FormItem {
+  width: 90%;
+  margin: auto;
+  height: 30%;
+  background-color: #cbcbcb;
+  padding: 8px;
+  display: flex;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-bottom: 15px;
+}
+
+.FormItem:hover {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #089cfc;
+}
+
+.formactive {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #089cfc;
+}
+
+.FormItem h3 {
+  text-align: left;
+  margin: 0 !important;
+  font-weight: bold;
+}
+
+.formtime {
+  text-align: left;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 !important;
+}
+
+.birdsrecorded {
+  text-align: left;
+  margin: 0 !important;
+  padding-top: 8px;
+  font-weight: 400;
+}
+
+.birdlocation {
+  text-align: left;
+  margin: 0 !important;
+  padding-top: 12px;
+  font-weight: 400;
+}
+
+.birdtime {
+  text-align: right;
+  margin: 0 !important;
+  font-weight: 400;
+}
+
+.line {
+  width: 50%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 5px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.forminfo {
+  width: 70%;
+}
+
+.rightformsection {
+  display: flex;
+  flex-grow: 4;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#FormDelete {
+  margin-left: auto;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0 !important;
+  transition: 0.4s;
+}
+
+#FormDelete img {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  /* bottom: 290px; */
+  /* right: 25px; */
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* #FormDelete:hover {
+  border-radius: 100%;
+  border-style: solid;
+  border-color: green;
+} */
+
+.animate {
+  /* transition: all 1s ease; */
+  transition: 0.2s;
+}
+
+.animate.expand {
+  height: 250px;
+}
+
+@media (max-width: 400px) {
+  .flex-row {
+    display: block;
+  }
+}
+
+.invalidPwd {
+  color: red;
+}
+
+.validPwd {
+  color: green;
+}
+
+#imagexpand {
+  position: relative;
+  padding: auto;
+  width: 90%;
+  height: 40%;
+  z-index: 20;
+  /* display: inline-block; */
+  border-radius: 20px;
+}
+
+#imagexpand img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.expandbird {
+  border-radius: 15px;
+  height: 150px;
+}
+
+.expandbird div {
+  display: block;
+  height: 100%;
+}
+
+/* bird image */
+.expandbird div img:nth-child(1) {
+  border-radius: 15px;
+  width: 100%;
+  height: 80%;
+}
+
+.expandbird div h4 {
+  background-color: green;
+  width: 84%;
+  height: 20px;
+  /* padding-bottom: 50px !important; */
+  text-align: center;
+  /* display: block; */
+}
+
+/* expand/collapse button */
+.expandbird div img:nth-child(3) {
+  aspect-ratio: 1/1;
+  width: 30px;
+  height: 20%;
+}
+
+.splash-img-container {
+  height: 15rem;
+  width: 15rem;
+  background: url("includes/images/Logo.png") no-repeat bottom;
+  background-size: 100% auto;
+}
+
+.expandbutton:hover {
+  filter: invert(99%) sepia(100%) saturate(1%) hue-rotate(331deg)
+    brightness(108%) contrast(101%);
+}
+
+.expandbutton {
+  cursor: pointer;
+  z-index: 100;
+}

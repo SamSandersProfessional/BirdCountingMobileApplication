@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780" height="662" viewBox="0 0 780 662">
+  <defs>
+    <clipPath id="clip-path">
+      <rect y="-114" width="780" height="662" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_3" data-name="Scroll Group 3" transform="translate(0 114)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="Group_35" data-name="Group 35" transform="translate(1.5 -102)">
+      <text id="MAGPIE" transform="translate(91)" fill="#2f2f2f" font-size="65" font-family="Lato-Regular, Lato"><tspan x="0" y="64">MAGPIE</tspan></text>
+      <text id="_90" data-name="90" transform="translate(615)" fill="#2f2f2f" font-size="65" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="86.6" y="64">90</tspan></text>
+      <line id="Line_7" data-name="Line 7" x2="777" transform="translate(0 90.5)" fill="none" stroke="#d0d0d0" stroke-linecap="round" stroke-width="3"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="18" cy="18" r="18" transform="translate(21 21)" fill="#ffa523"/>
+    </g>
+    <g id="Group_36" data-name="Group 36" transform="translate(1.5 5.489)">
+      <text id="PARROT" transform="translate(91)" fill="#2f2f2f" font-size="65" font-family="Lato-Regular, Lato"><tspan x="0" y="64">PARROT</tspan></text>
+      <text id="_80" data-name="80" transform="translate(615)" fill="#2f2f2f" font-size="65" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="86.6" y="64">80</tspan></text>
+      <line id="Line_7-2" data-name="Line 7" x2="777" transform="translate(0 90.512)" fill="none" stroke="#d0d0d0" stroke-linecap="round" stroke-width="3"/>
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="18" cy="18" r="18" transform="translate(21 21)" fill="#00b4b0"/>
+    </g>
+    <g id="Group_37" data-name="Group 37" transform="translate(1.5 112.978)">
+      <text id="BLUE_TIT" data-name="BLUE TIT" transform="translate(91 0.022)" fill="#2f2f2f" font-size="65" font-family="Lato-Regular, Lato"><tspan x="0" y="64">BLUE TIT</tspan></text>
+      <text id="_50" data-name="50" transform="translate(615 0.022)" fill="#2f2f2f" font-size="65" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="86.6" y="64">50</tspan></text>
+      <line id="Line_7-3" data-name="Line 7" x2="777" transform="translate(0 90.5)" fill="none" stroke="#d0d0d0" stroke-linecap="round" stroke-width="3"/>
+      <circle id="Ellipse_1-3" data-name="Ellipse 1" cx="18" cy="18" r="18" transform="translate(21 21.022)" fill="#9f49a3"/>
+    </g>
+    <g id="Group_38" data-name="Group 38" transform="translate(1.5 220.466)">
+      <text id="KINGFISHER" transform="translate(91)" fill="#2f2f2f" font-size="65" font-family="Lato-Regular, Lato"><tspan x="0" y="64">KINGFISHER</tspan></text>
+      <text id="_35" data-name="35" transform="translate(615)" fill="#2f2f2f" font-size="65" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="86.6" y="64">35</tspan></text>
+      <line id="Line_7-4" data-name="Line 7" x2="777" transform="translate(0 90.534)" fill="none" stroke="#d0d0d0" stroke-linecap="round" stroke-width="3"/>
+      <path id="Path_29" data-name="Path 29" d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z" transform="translate(21 21)" fill="#00a0cf"/>
+    </g>
+    <g id="Group_39" data-name="Group 39" transform="translate(1.5 327.955)">
+      <text id="SPARROW" transform="translate(91 0.045)" fill="#2f2f2f" font-size="65" font-family="Lato-Regular, Lato"><tspan x="0" y="64">SPARROW</tspan></text>
+      <text id="_15" data-name="15" transform="translate(615 0.045)" fill="#2f2f2f" font-size="65" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="86.6" y="64">15</tspan></text>
+      <line id="Line_7-5" data-name="Line 7" x2="777" transform="translate(0 90.5)" fill="none" stroke="#d0d0d0" stroke-linecap="round" stroke-width="3"/>
+      <path id="Path_30" data-name="Path 30" d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z" transform="translate(21 21)" fill="#ff3169"/>
+    </g>
+  </g>
+</svg>

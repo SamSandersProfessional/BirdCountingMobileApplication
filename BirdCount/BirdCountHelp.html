@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Log In or Sign Up | BirdCount</title>
+<link rel="stylesheet" href="style.css">
+<script script src="scripts.js"></script>
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <button id="burger" onclick="toggleMenu()" role ="reveal menu">
+    <img src ="includes/images/BurgerMenuIcon.png" alt ="3 individual lines aligned vertically">
+  </button>
+  <a id="homeshortcut" role="home" href="index.html">
+    <img id="homeimg" src="includes/images/Logo.png" alt="RSPB Logo" />
+  </a>
+  <div id ="MainNav">
+    <div id="topnav" role ="navigation"> 
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="BirdResults.html">Results</a></li>
+              <li><a href="Admin.html">Admin</a></li>
+              <li><a href="RecentForm.html">Recent Forms</a></li>
+              <li><a href="BirdCountRegistrationSplash.html">My Account</a></li>
+              <li class="active"><a href="BirdCountHelp.html">Help and FAQs</a></li>
+        </nav>
+        
+    </div>
+    
+    <button id="settingsCog" onclick="toggleSettings()" role="open settings">
+    <img src ="includes/images/SettingCogImage.png" alt="mechanical cog">
+    </button>
+    </div>
+    
+    <div id ="MainSettings" >
+      <div id="settings" role ="Settings">
+          <ul>
+            <li>Dyslexic view<br />
+              <label class="switch">
+                <input type="checkbox" id="dyslexicView">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li>High contrast view<br />
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li>Text to Speech<br />
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li>Language<br />
+              <select name="Language" style="font-size: 20px;margin-top: 20px;height:40px;width:70%;">
+                <option value="Eng">Eng</option>
+                <option value="Fre">Fre</option>
+                <option value="Jam">Jam</option>
+                <option value="Spa">Spa</option>
+              </select>
+            </li>
+            
+            <li>Text size<br />
+              <div style="align-items: center;
+              display: grid;
+              justify-content: center;">
+              <span class="checkboxContainer">
+              <input type="checkbox">AAA  </span>
+              <span class="checkboxContainer">
+              <input type="checkbox"> AA</span> 
+              <span class="checkboxContainer">
+                <input type="checkbox"> A</span>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <button id="settingsCogSecond" onclick="toggleSettings()" role="open settings">
+          <img src ="includes/images/SettingCogImage.png" alt="mechanical cog">
+        </button>
+    </div>
+
+
+
+<div id="Main">
+    Help and FAQs <br/><br/> 
+
+  <div style="background-color: lightgray;margin: 0.25rem;box-shadow: 0px 0px 10px darkgray;" >
+    <div class="flex-row">
+      <div class="column" style="padding-bottom: 1.5rem;">
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px; width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">1: I don't know how to sign in.</button>
+        &nbsp;&nbsp;
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px; width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">2: How do I reset my Password?</button>
+      </div>
+      
+    </div>
+    <div class="flex-row">
+      <div class="column" style="padding-bottom: 1.5rem;">
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px;width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">3: How do I add a bird to the results?</button>
+        &nbsp;&nbsp;
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px;width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">4: What if I see more than one bird?</button>
+      </div>
+    </div>
+
+    <div class="flex-row">
+      <div class="column" style="padding-bottom: 1.5rem;">
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px;width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">5: Can I add birds once I get home?</button>
+        &nbsp;&nbsp;
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px;width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">6: What if I make a mistake?</button>
+      </div>
+    </div>
+
+    <div class="flex-row">
+      <div class="column" style="padding-bottom: 1.5rem;">
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px;width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">7: How do I see the results?</button>
+        &nbsp;&nbsp;
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px;width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">8: Do I have to log in to an account?</button>
+      </div>
+    </div>
+
+    <div class="flex-row">
+      <div class="column" style="padding-bottom: 1.5rem;">
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px;width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">9: What if I don't know what bird I'm looking at?</button>
+        &nbsp;&nbsp;
+        <button onclick="toggleBirdPopUp()" style="font-size: 18px;width:9rem;height:6rem;color:white;box-shadow: 5px 5px 5px darkgray;" role="Open pop up to add a bird">10: Where is allowed to count birds from?</button>
+      </div>
+    </div>
+
+  <div id="AddBirdsPopUp" style="height: 85%; background-color: #558afb; color: whitesmoke;">
+    <button id="PopUpClose">
+      <img src="includes/images/Close.png" style="bottom: 80%; width: 2.5rem; height: 2.5rem;" onclick="toggleBirdPopUp()" role="close popup">
+    </button>
+
+    <br/>
+    <ol>
+      <li>Navigate to our registration page in the menu on the top left of your screen. Press on the three horizontal lines to open the menu.</li><br/>
+      <li>Click 'My Account' to navigate to the registration screen.</li><br/>
+      <li>Click Login if you have made an account already. If you don't have a user account, then click on the sign-up link to make a new account.</li><br/>
+      <li>Then, add your user details. You may select 'forgot your password?' to reset your password if you can't remember it.</li>
+  </ol>
+  This is the End of the Instructions. Please Press the 'X' at the top right of this box to Return to the Help Page.   
+</div>
+
+</body>
+</html>
