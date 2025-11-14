@@ -1,7 +1,7 @@
 <h1>Bird Counting Mobile Application</h1>
 
 <h2>Description</h2>
-This project was a group task consisting of five members to create an application that would serve residents of Cape York in Australia. The application uses HTML with CSS for styling, JavaScript for simple scripts such as incrementing the like counter, JSON to store hashed passwords and a test harness to test features within the pages.
+I worked on this project as part of a team of three. The premise of the application was to allow users to easily count birds seen by end users as part of the RSPB Big Garden Birdwatch. It uses UX principles such as recognition over recall using icons, progress bars to allow users to know which step they're on, and colour to verify correct passwords
 <br />
 
 
