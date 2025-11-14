@@ -53,6 +53,10 @@ Dynamic Login Page Which Updates as you Meet Each Criteria:  <br/>
 <img width="369" height="670" alt="image" src="https://github.com/user-attachments/assets/ffc42acf-5360-47fe-8306-cd1cfce25a53" />
 <br />
 <br />
+Accessibility Options: <br/>
+<img width="375" height="665" alt="image" src="https://github.com/user-attachments/assets/ee500c04-e7e4-4d49-aaed-a3209632cbff" />
+<br />
+<br />
 Adding a Bird to be Counted:  <br/>
 <img width="374" height="573" alt="image" src="https://github.com/user-attachments/assets/9e68453c-42be-4bd1-8c28-94f9c667af0f" />
 <br />
