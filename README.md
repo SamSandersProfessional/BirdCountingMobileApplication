@@ -1,4 +1,4 @@
-<h1>Cape York Connected - Web Application</h1>
+<h1>Bird Counting Mobile Application</h1>
 
 <h2>Description</h2>
 This project was a group task consisting of five members to create an application that would serve residents of Cape York in Australia. The application uses HTML with CSS for styling, JavaScript for simple scripts such as incrementing the like counter, JSON to store hashed passwords and a test harness to test features within the pages.
